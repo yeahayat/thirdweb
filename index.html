@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Assignment #4 — Responsive Web Design</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark site-header">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#">
+          <div class="mark">AB</div>
+          <span>Assignment #4</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#part1">Part 1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#part2">Part 2</a></li>
+            <li class="nav-item"><a class="nav-link" href="#part3">Portfolio</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Part 1 -->
+    <section id="part1" class="section">
+      <h2>Part 1: Media Queries</h2>
+      
+      <div class="task-0 mb-5">
+        <h3>Task 0: Responsive Text</h3>
+        <div class="typography-demo">
+          <h1 class="responsive-heading">Responsive Design</h1>
+          <h2 class="responsive-subheading">It looks good everywhere</h2>
+          <p class="responsive-text">This text changes size on phone, tablet and computer. Try to change the window size.</p>
+          <p class="responsive-text muted">It is simple, but works nice.</p>
+        </div>
+      </div>
+
+      <div class="task-1 mb-5">
+        <h3>Task 1: Box Layout</h3>
+        <p class="muted">Boxes move when screen size changes.</p>
+        <div class="boxes-container">
+          <div class="custom-box">
+            <h4>Box 1</h4>
+            <p>Moves with screen size</p>
+          </div>
+          <div class="custom-box">
+            <h4>Box 2</h4>
+            <p>Made only with CSS</p>
+          </div>
+          <div class="custom-box">
+            <h4>Box 3</h4>
+            <p>It is simple and clean</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Part 2 -->
+    <section id="part2" class="section">
+      <h2>Part 2: Bootstrap Grid</h2>
+      
+      <div class="mb-5">
+        <h3>Task 2: Columns</h3>
+        <p class="muted">Three columns that change on small screens.</p>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="bootstrap-column">
+              <h4>Column 1</h4>
+              <p>Full width on phone, half on tablet, one third on computer.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="bootstrap-column">
+              <h4>Column 2</h4>
+              <p>Uses Bootstrap grid classes.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4 mb-3">
+            <div class="bootstrap-column">
+              <h4>Column 3</h4>
+              <p>Looks good on all devices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-5">
+        <h3>Bootstrap Cards</h3>
+        <p class="muted">Some cards with simple info.</p>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="bootstrap-card">
+              <div class="card-img">
+                <img src="cards/first.webp" alt="Media Queries">
+              </div>
+              <div class="card-body">
+                <h4>Jungkook</h4>
+                <p class="muted">He looks like me.</p>
+                <button class="btn">See more</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="bootstrap-card">
+              <div class="card-img">
+                <img src="cards/second.jpg" alt="Bootstrap Grid">
+              </div>
+              <div class="card-body">
+                <h4>Overcomer</h4>
+                <p class="muted">He helps me stay strong.</p>
+                <button class="btn">See more</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="bootstrap-card">
+              <div class="card-img">
+                <img src="cards/third.jpg" alt="Responsive Design">
+              </div>
+              <div class="card-body">
+                <h4>OG Buda</h4>
+                <p class="muted">Good music, simple style.</p>
+                <button class="btn">See more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Part 3 -->
+    <section id="part3" class="section">
+      <h2>Part 3: Portfolio</h2>
+      
+      <div class="portfolio">
+        <div class="row">
+          <div class="col-lg-8 mb-4">
+            <h3>My Projects</h3>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <article class="project-card">
+                  <h4>Responsive Website</h4>
+                  <p class="muted">My first responsive website with media queries.</p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">Bootstrap</span>
+                  </div>
+                  <button>View</button>
+                </article>
+              </div>
+              <div class="col-md-6 mb-3">
+                <article class="project-card">
+                  <h4>Shop Page</h4>
+                  <p class="muted">Simple online shop page that looks good on phone.</p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">Flexbox</span>
+                    <span class="tech-tag">CSS</span>
+                  </div>
+                  <button>View</button>
+                </article>
+              </div>
+              <div class="col-md-6 mb-3">
+                <article class="project-card">
+                  <h4>Dashboard</h4>
+                  <p class="muted">Admin page made with Bootstrap.</p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">Bootstrap</span>
+                    <span class="tech-tag">JS</span>
+                  </div>
+                  <button>View</button>
+                </article>
+              </div>
+              <div class="col-md-6 mb-3">
+                <article class="project-card">
+                  <h4>Blog</h4>
+                  <p class="muted">Blog page with simple text and good layout.</p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                  </div>
+                  <button>View</button>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <aside class="project-side">
+              <div class="profile-section mb-4">
+                <div class="profile-img">
+                  <img src="logo/logo.jpg" alt="Profile">
+                </div>
+                <h3>Ayat Balmagambet</h3>
+                <p class="muted">Web Dev Student</p>
+                <p>I like to make websites. I study HTML, CSS, and Bootstrap. I want to learn more and make better projects.</p>
+              </div>
+
+              <div class="skills-section mb-4">
+                <h4>My Skills</h4>
+                <div class="skills">
+                  <span class="skill-tag">HTML</span>
+                  <span class="skill-tag">CSS</span>
+                  <span class="skill-tag">Bootstrap</span>
+                  <span class="skill-tag">Responsive</span>
+                  <span class="skill-tag">JavaScript</span>
+                </div>
+              </div>
+
+              <div class="contact-info">
+                <h4>Contact</h4>
+                <ul class="muted">
+                  <li>📧 balmagambetaat@gmail.com</li>
+                  <li>📱 +7 (775) 199-85-09</li>
+                  <li>📍 Astana, Kazakhstan</li>
+                  <li>💼 github.com/yeahayat</li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+
+      <footer class="g-footer">
+        <p>© 2025 Ayat Balmagambet</p>
+        <p class="muted">Responsive Design with Bootstrap</p>
+      </footer>
+    </section>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
